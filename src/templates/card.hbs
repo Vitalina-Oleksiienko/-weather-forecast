@@ -1,0 +1,47 @@
+<div class="card">
+    <div class="info">
+        <p class="info-item">
+            <i class="material-icons">City:</i>
+            {{location.name}}
+        </p>
+        <p class="info-item">
+            <i class="material-icons">Country:</i>
+            {{location.country}}
+        </p>
+        <p class="info-item">
+            <i>Region:</i>
+            {{location.region}}
+        </p>
+        <p class="info-item">
+            <i class="material-icons">Temperature:</i>
+            {{current.temperature}}
+        </p>
+        <p class="info-item">
+            <i class="material-icons">Cloudiness:</i>
+            {{current.weather_descriptions}}
+        </p>
+        <img src={{current.weather_icons}} class="info-item">
+        </img>
+        <p>
+        <i class="material-icons">Wind degree:</i>
+            {{current.wind_degree}}
+        </p>
+        <p>
+        <i class="material-icons">Wind speed:</i>
+            {{current.wind_speed}}
+        </p>
+        <p>
+        <i class="material-icons">Wind direction:</i>
+            {{current.wind_dir}}
+        </p>
+
+        <p class="info-item">
+            <i class="material-icons">Local time:</i>
+            {{location.localtime}}
+        </p>
+        <p class="info-item">
+            <i class="material-icons">Time zone:</i>
+            {{location.timezone_id}}
+        </p>
+    </div>
+</div>
