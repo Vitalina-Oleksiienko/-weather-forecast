@@ -2,20 +2,8 @@ import './sass/main.scss';
 
 import API from './js/apiService';
 import getRefs from './js/get-refs';
-
-// import { alert, defaultModules } from '../node_modules/@pnotify/core/dist/PNotify.js';
-// import * as PNotifyMobile from '../node_modules/@pnotify/mobile/dist/PNotifyMobile.js';
-// import '@pnotify/core/dist/BrightTheme.css';
-
 import cardTpl from './templates/card.hbs';
-import getRootDir from 'parcel-bundler/lib/utils/getRootDir';
 
-  // defaultModules.set(PNotifyMobile, {});
- 
-  // alert({
-  //   text: 'Notice me, senpai!'
-  // });
-///////////////////////////////////////////////////
 const refs = getRefs();
 
 function onSearch(e) {

@@ -1,22 +1,23 @@
 {
-  "name": "parcel-project-template",
+  "name": "weather-forecast",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://Vitalina-Oleksiienko.github.io/weather-forecast",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /weather-forecast/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/Vitalina-Oleksiienko/weather-forecast.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/Vitalina-Oleksiienko/weather-forecast/issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
@@ -24,5 +25,10 @@
     "parcel-plugin-nuke-dist": "^1.0.1",
     "posthtml-include": "^1.6.2",
     "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "gh-pages": "^3.2.3",
+    "lodash.debounce": "^4.0.8"
   }
 }
