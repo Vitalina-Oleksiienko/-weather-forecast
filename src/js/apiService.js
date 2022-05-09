@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = 'http://api.weatherstack.com';
+const BASE_URL = 'https://api.weatherstack.com';
 const API_KEY = '65597c5b7a0295aa7818b4b27a1fb23f';
 
 function fetchCity(searchQuery) {
