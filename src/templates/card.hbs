@@ -14,13 +14,13 @@
         </p>
         <p class="info-item">
             <i class="material-icons">Temperature:</i>
-            {{current.temperature}}
+            {{current.temp_c}}
         </p>
         <p class="info-item">
             <i class="material-icons">Cloudiness:</i>
-            {{current.weather_descriptions}}
+            {{current.condition.text}}
         </p>
-        <img src={{current.weather_icons}} class="info-item">
+        <img src={{current.condition.icon}} class="info-item">
         </img>
         <p>
         <i class="material-icons">Wind degree:</i>
@@ -28,7 +28,7 @@
         </p>
         <p>
         <i class="material-icons">Wind speed:</i>
-            {{current.wind_speed}}
+            {{current.wind_mph}}
         </p>
         <p>
         <i class="material-icons">Wind direction:</i>
@@ -41,7 +41,7 @@
         </p>
         <p class="info-item">
             <i class="material-icons">Time zone:</i>
-            {{location.timezone_id}}
+            {{location.tz_id}}
         </p>
     </div>
 </div>
